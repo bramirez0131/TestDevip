@@ -27,7 +27,7 @@ export class PostService {
 
   updatePost(post: Post): Observable<any>{
     const req = `${this.path}/${post.id}`;
-    return this.http.put<Post>(this.path, post);
+    return this.http.put<Post>(req, post);
   }
 
   deletePost(id: string): Observable<any>{
