@@ -11,7 +11,7 @@ export class CreatePostComponent implements OnInit {
 
   submitted = false;
   post:Post = {
-    userId: '1',
+    userId: '',
     title: '',
     body: ''
   };
@@ -23,7 +23,7 @@ export class CreatePostComponent implements OnInit {
 
   createPost(): void {
     const post:Post = {
-      userId: this.post.id,
+      userId: this.post.userId,
       title: this.post.title,
       body: this.post.body
     };
